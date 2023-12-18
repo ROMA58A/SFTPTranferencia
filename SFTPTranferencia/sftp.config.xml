@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+
+<xml>
+	<conf>
+		<processor mode="dev" debug="false" intervalInMinutes="1" />
+		<db-credentials username="bancocuscatlan" password="pwnetdoci$1" />
+	
+	
+        <db-connection logLevel="log"
+            URL="jdbc:sqlserver://10.0.3.100:1433;databaseName=Bancocuscaqa"
+            Schema="Doci"
+            JmxEnabled="true"
+            TestWhileIdle="false"
+            TestOnBorrow="true"
+            TestOnReturn="false"
+            LogAbandoned="false"
+            RemoveAbandoned="true"
+            RemoveAbandonedTimeout="3600"
+            ValidationInterval="5000"
+            InitialSize="10"
+            MaxActive="200"
+            MaxWait="5000"
+            MaxIdle="200"
+            MinIdle="10"
+            MinEvictableIdleTimeMillis="60000"
+            TimeBetweenEnvictionRunsMillis="7000"
+        />
+
+		<companyId id= "a5"/>
+		<sftp-credentials host="45.195.207.5" port="2022" user="BancoOLS_UAT" password="MjnJu(7y6tg"/>
+		<rutaArchivoSubir ruta = "D:\\procesamiento\\"/>
+		<remoteDirectoryEntrada ruta = "/CarpetaTraslado/Entrada/"/>
+		<remoteDirectorySalida ruta  = "/CarpetaTraslado/Salida/"/>
+		<rutaArchivoDescargar ruta  = "D:\\procesamiento\\descargar\\"/>
+		<dynamo url="https://fy0nnth485.execute-api.us-east-2.amazonaws.com/olsdb/getdata"/>
+		<auth tokken="Basic YWNzYVVzM3I6cEBzJDV3MHJk"/>
+	</conf>
+</xml>
