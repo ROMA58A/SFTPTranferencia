@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<xml>
+	<conf>
+	  <service mode="prod" senderIntervalInMinutes="1" serializerIntervalInMinutes="1" />
+		
+		<db-credentials username=""
+		                password=""/>
+		<db-connection logLevel=""
+		               URL=""
+		               Schema="Doci"
+		               JmxEnabled="true"
+		               TestWhileIdle="false"
+		               TestOnBorrow="true"
+		               TestOnReturn="false"
+		               LogAbandoned="false"
+		               RemoveAbandoned="true"
+		               RemoveAbandonedTimeout="3600"
+		               ValidationInterval="5000"
+		               InitialSize="10"
+		               MaxActive="200"
+		               MaxWait="5000"
+		               MaxIdle="200"
+		               MinIdle="10"
+		               MinEvictableIdleTimeMillis="60000"
+		               TimeBetweenEnvictionRunsMillis="7000"/>
+		
+		<sftp-credentials host=""
+		                  port=""
+		                  user=""
+		                  password=""/>
+		
+		<filesystem 
+		localAceptedFolder="" 
+		localRejectedFolder=""
+		localAceptedFolderBac=""
+		localRejectedFolderBac=""/>
+		
+		<nit  
+		banco="" 
+		tarjetas=""
+	/>
+
+	<companyId 
+		id="" 
+	/>
+		
+
+		<api-doci-endpoint
+			logLevel="log"
+			timeoutMinutes="5"
+			authorization="YWNzYVVzM3I6cEBzJDV3MHJk"
+			dynamoEndpoint="https://fy0nnth485.execute-api.us-east-2.amazonaws.com/olsdb/getdata"
+			pdfEndpoint="http://127.0.0.1:8080/ConstructorPDF/v1/generatedpdf"
+		/>
+	</conf>
+</xml>
